@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+type LinkNode struct {
+	Val  int
+	Next *LinkNode
+}
+
 func main() {
-	fmt.Printf("test")
+	fmt.Println("3")
 }
