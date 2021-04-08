@@ -8,5 +8,16 @@ type LinkNode struct {
 }
 
 func main() {
-	fmt.Println("3")
+	fmt.Println(test())
+}
+func test() int {
+	result := 5
+	defer func() {
+		fmt.Println("defer 1")
+	}()
+
+	defer func() {
+		fmt.Println("defer 2")
+	}()
+	return result
 }
